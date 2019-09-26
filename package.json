@@ -1,0 +1,29 @@
+{
+  "name": "pruebadxc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./index.ts",
+    "prod": "tsc && node ./build/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkto/pruebaDXC.git"
+  },
+  "author": "Jesson Ember Bejarano Mosquera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkto/pruebaDXC/issues"
+  },
+  "homepage": "https://github.com/lkto/pruebaDXC#readme",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.6.3"
+  }
+}
