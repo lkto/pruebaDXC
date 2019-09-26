@@ -1,10 +1,16 @@
 {
   "name": "pruebadxc",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.(ts|html)$": "node_modules"
+    }
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./index.ts",
     "prod": "tsc && node ./build/index.ts"
@@ -20,10 +26,19 @@
   },
   "homepage": "https://github.com/lkto/pruebaDXC#readme",
   "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
     "@types/express": "^4.17.1",
+    "babel-jest": "^24.9.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "ts-node-dev": "^1.0.0-pre.43",
+    "ts-node-dev": "^1.0.0-pre.43"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }

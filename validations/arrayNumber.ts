@@ -1,12 +1,17 @@
 import { isNumber } from "util";
 
-export  const isAllNumber = (data: any) =>  {
+export  const isAllNumber = (data) =>  {
     let error = false;
-    data.forEach( (element: any) => {
-        if(!isNumber(element)){
-            error = true;
-        }
-    });
-
+    if(typeof data.forEach === 'function') {
+        data.forEach( (element) => {
+            if(!isNumber(element)){
+                error = true;
+            }
+    
+        });    
+    }else{
+        error = true;
+    }
+    
     return error;
 }
