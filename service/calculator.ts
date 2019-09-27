@@ -1,56 +1,56 @@
-const suma = (data: any) => {
+const sum = (data: any) => {
     let result = 0;
     data.forEach( (element: any, x: any) => {
         if(x == 0)
         {
             result = element;
         }else{
-            result = result + element;
+            result += element;
         }
         
     });
     return result;
 }
 
-const resta = (data: any) => {
+const subtraction = (data: any) => {
     let result = 0;
     data.forEach( (element: any, x: any) => {
         if(x == 0)
         {
             result = element;
         }else{
-            result = result - element;
+            result -= element;
         }
         
     });
     return result;
 }
 
-const multiplicaison = (data: any) => {
+const multiplication = (data: any) => {
     let result = 0;
     data.forEach( (element: any,  x: any) => {
         if(x == 0)
         {
             result = element;
         }else{
-            result = result * element;
+            result *= element;
         }
         
     });
     return result;
 }
 
-const divicion = (data: any) => {
+const division = (data: any) => {
     let result = 0;
     data.forEach( (element: any, x:any) => {
         if(x == 0)
         {
             result = element;
         }else{
-            result = result / element;
+            result /= element;
         }
     });
     return result;
 }
 
-export {suma, resta, multiplicaison , divicion};
+export {sum, subtraction, multiplication , division};
